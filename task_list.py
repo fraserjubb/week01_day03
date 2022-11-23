@@ -39,6 +39,14 @@ print(find_all_task_descriptions())
 
 
 # 4. Print a list of tasks where time_taken is at least a given time
+def find_tasks_longer_than():
+    tasks_longer_than = []
+    user_time = input("Enter time taken for task")
+    for task in tasks:
+        if tasks["time_taken"] > user_time:
+            tasks_longer_than.append(tasks["time_taken"])
 
+    return tasks_longer_than
+print(find_tasks_longer_than())
 
 # 5. Print any task with a given description
